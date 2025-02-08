@@ -1,0 +1,256 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color:bisque;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: rgb(125, 4, 172);
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 4px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 5px;
+    background: #4CAF50;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Services Section */
+.service {
+    margin: 30px 0;
+    padding: 20px;
+    background: #efb04a;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.service h3 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Gallery Section */
+#gallery {
+    background: #fff;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    color: #444;
+    font-style: italic;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    background: #4CAF50;
+    color:burlywood;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-images img {
+        width: 48%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    .service, .testimonial {
+        padding: 15px;
+    }
+}

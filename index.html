@@ -3,61 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Explore Paris</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
+    <!-- Header Section -->
+    <header>
         <h1>Explore Paris</h1>
-    </div>
+        <p>Your guide to the most iconic places in Paris</p>
+    </header>
 
-    <p class="description">
-        Paris, the capital city of France, is known for its iconic landmarks, exquisite cuisine, and romantic atmosphere. 
-        From the Eiffel Tower to the charming streets of Montmartre, Paris is a dream destination for travelers worldwide.
-    </p>
+    <!-- About Paris Section -->
+    <section id="about">
+        <h2>About Paris</h2>
+        <p>
+            Paris, the capital of France, is a global center for art, fashion, and culture. It's known for its landmarks like the Eiffel Tower, the Louvre Museum, and the Gothic Notre-Dame Cathedral. Whether you're exploring the chic streets of Montmartre, enjoying the world-class cuisine, or shopping at luxurious boutiques, Paris offers a unique experience.
+        </p>
+        <h3>Famous Landmarks</h3>
+        <ul>
+            <li><strong>Eiffel Tower:</strong> The symbol of Paris, offering breathtaking views of the city from its platforms.</li>
+            <li><strong>Louvre Museum:</strong> Home to thousands of works of art, including the iconic Mona Lisa.</li>
+            <li><strong>Notre-Dame Cathedral:</strong> A masterpiece of French Gothic architecture.</li>
+        </ul>
+    </section>
 
-    <table>
-        <tr>
-            <th>Attraction</th>
-            <th>Best Time to Visit</th>
-            <th>Famous For</th>
-        </tr>
-        <tr>
-            <td>Eiffel Tower</td>
-            <td>Spring & Fall</td>
-            <td>Iconic Landmark</td>
-        </tr>
-        <tr>
-            <td>Louvre Museum</td>
-            <td>All Year Round</td>
-            <td>Mona Lisa, Art Collections</td>
-        </tr>
-        <tr>
-            <td>Notre-Dame Cathedral</td>
-            <td>Spring & Summer</td>
-            <td>Gothic Architecture</td>
-        </tr>
-        <tr>
-            <td>Seine River Cruise</td>
-            <td>Evening</td>
-            <td>Romantic Views</td>
-        </tr>
-    </table>
+    <!-- Our Vision Section -->
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>
+            We aim to inspire travelers by showcasing the beauty of Paris. Our goal is to provide useful information and tips that will make your trip to Paris unforgettable. Explore hidden gems, the best tourist spots, local culture, and cuisine, and experience the magic of this wonderful city.
+        </p>
+    </section>
 
-    <h2>Things to Do</h2>
-    <ul>
-        <li>Visit the Eiffel Tower</li>
-        <li>Explore the Louvre Museum</li>
-        <li>Enjoy a Seine River Cruise</li>
-        <li>Try French pastries and coffee</li>
-    </ul>
+    <!-- Paris Services Section -->
+    <section id="services">
+        <h2>Explore Paris Services</h2>
+        <div class="service">
+            <h3>Guided Tours</h3>
+            <p>Join our local guides for an unforgettable tour of Paris, with visits to major attractions and hidden gems off the beaten path.</p>
+        </div>
+        <div class="service">
+            <h3>Food & Wine Tasting</h3>
+            <p>Experience Parisian cuisine with our food and wine tasting tours, from croissants to gourmet meals.</p>
+        </div>
+        <div class="service">
+            <h3>Photography Tours</h3>
+            <p>Take a photography tour with professional photographers and capture the iconic sights of Paris through your lens.</p>
+        </div>
+    </section>
 
-    <h2>Top Attractions</h2>
-    <ol>
-        <li>Eiffel Tower</li>
-        <li>Louvre Museum</li>
-        <li>Notre-Dame Cathedral</li>
-        <li>Champs-Élysées & Arc de Triomphe</li>
-    </ol>
+    <!-- Explore Paris Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Discover the beauty of Paris through these stunning photos:</p>
+        <div class="gallery-images">
+            <img src="image1.jpg" alt="Eiffel Tower" width="300" height="200">
+            <img src="image2.jpg" alt="Louvre Museum" width="300" height="200">
+            <img src="image3.jpeg" alt="Notre-Dame Cathedral" width="300" height="200">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Visitors Say</h2>
+        <div class="testimonial">
+            <p>"Exploring Paris with this guide made my trip unforgettable! The tour was informative, and we saw so many amazing places." - Sarah W.</p>
+        </div>
+        <div class="testimonial">
+            <p>"I loved the food and wine tasting tour. The selection of Parisian wines and cheeses was incredible!" - David L.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need help planning your trip, feel free to reach out!</p>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Explore Paris | All Rights Reserved</p>
+        <p>Follow us on:
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
 </body>
 </html>
